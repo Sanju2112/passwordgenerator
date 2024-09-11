@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #002339, #003c59);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    margin: 0;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 700px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    color: #333;
+}
+
+.display {
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    background: #f0f0f0;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.container h1 {
+    font-weight: 600;
+    font-size: 38px;
+}
+
+.container h1 span {
+    color: #019f55;
+    border-bottom: 4px solid #019f55;
+    padding-bottom: 5px;
+}
+
+.display img {
+    width: 30px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.display img:hover {
+    transform: scale(1.1);
+}
+
+.display input {
+    border: 0;
+    outline: 0;
+    font-size: 22px;
+    width: 85%;
+    background: transparent;
+    color: #333;
+}
+
+.container button {
+    border: 0;
+    outline: 0;
+    background: #019f55;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.container button img {
+    width: 28px;
+    margin-right: 10px;
+}
+
+.container button:hover {
+    background-color: #018544;
+    transform: translateY(-2px);
+}
+
+.container button:active {
+    transform: translateY(0);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    .container h1 {
+        font-size: 32px;
+    }
+
+    .display {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+    }
+
+    .display input {
+        font-size: 18px;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .display img {
+        align-self: flex-end;
+    }
+
+    .container button {
+        font-size: 20px;
+        padding: 12px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 15px;
+    }
+
+    .container h1 {
+        font-size: 28px;
+    }
+
+    .display {
+        padding: 15px;
+    }
+
+    .display input {
+        font-size: 16px;
+    }
+
+    .container button {
+        font-size: 18px;
+        padding: 10px 16px;
+    }
+
+    .container button img {
+        width: 24px;
+    }
+}
